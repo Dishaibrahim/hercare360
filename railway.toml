@@ -1,26 +1,6 @@
-# Railway multi-service config — one service per agent
-# Deploy from hercare360/ directory.
-# Set GOOGLE_API_KEY as a shared variable in the Railway project.
-# After deploying Clinical, copy its Railway URL and set
-# CLINICAL_SERVICE_URL=https://<clinical-railway-url>/mcp on the Ops service.
-
 [build]
-builder = "dockerfile"
-
-[[services]]
-name = "hercare-ops"
 dockerfilePath = "Dockerfile.ops"
 
-[services.deploy]
+[deploy]
 healthcheckPath = "/health"
-healthcheckTimeout = 30
-restartPolicyType = "on_failure"
-
-[[services]]
-name = "hercare-clinical"
-dockerfilePath = "Dockerfile.clinical"
-
-[services.deploy]
-healthcheckPath = "/health"
-healthcheckTimeout = 30
 restartPolicyType = "on_failure"
