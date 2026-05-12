@@ -2,475 +2,1020 @@
   "resourceType": "Bundle",
   "type": "transaction",
   "entry": [
-
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "meera-nair",
-        "name": [{"use": "official", "family": "Nair", "given": ["Meera"]}],
+        "name": [
+          {
+            "use": "official",
+            "family": "Nair",
+            "given": [
+              "Meera"
+            ]
+          }
+        ],
         "gender": "female",
         "birthDate": "1998-03-14",
-        "address": [{"city": "Mumbai", "country": "IN"}]
+        "address": [
+          {
+            "city": "Mumbai",
+            "country": "IN"
+          }
+        ]
       },
-      "request": {"method": "PUT", "url": "Patient/meera-nair"}
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
     },
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "priya-menon",
-        "name": [{"use": "official", "family": "Menon", "given": ["Priya"]}],
+        "name": [
+          {
+            "use": "official",
+            "family": "Menon",
+            "given": [
+              "Priya"
+            ]
+          }
+        ],
         "gender": "female",
         "birthDate": "2001-07-22",
-        "address": [{"city": "Bangalore", "country": "IN"}]
+        "address": [
+          {
+            "city": "Bangalore",
+            "country": "IN"
+          }
+        ]
       },
-      "request": {"method": "PUT", "url": "Patient/priya-menon"}
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
     },
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "aarav-shah",
-        "name": [{"use": "official", "family": "Shah", "given": ["Aarav"]}],
+        "name": [
+          {
+            "use": "official",
+            "family": "Shah",
+            "given": [
+              "Aarav"
+            ]
+          }
+        ],
         "gender": "female",
         "birthDate": "1994-11-05",
-        "address": [{"city": "Delhi", "country": "IN"}]
+        "address": [
+          {
+            "city": "Delhi",
+            "country": "IN"
+          }
+        ]
       },
-      "request": {"method": "PUT", "url": "Patient/aarav-shah"}
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
     },
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "lakshmi-iyer",
-        "name": [{"use": "official", "family": "Iyer", "given": ["Lakshmi"]}],
+        "name": [
+          {
+            "use": "official",
+            "family": "Iyer",
+            "given": [
+              "Lakshmi"
+            ]
+          }
+        ],
         "gender": "female",
         "birthDate": "1990-02-18",
-        "address": [{"city": "Chennai", "country": "IN"}]
+        "address": [
+          {
+            "city": "Chennai",
+            "country": "IN"
+          }
+        ]
       },
-      "request": {"method": "PUT", "url": "Patient/lakshmi-iyer"}
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
     },
     {
       "resource": {
         "resourceType": "Patient",
-        "id": "shreya-kumar",
-        "name": [{"use": "official", "family": "Kumar", "given": ["Shreya"]}],
+        "name": [
+          {
+            "use": "official",
+            "family": "Kumar",
+            "given": [
+              "Shreya"
+            ]
+          }
+        ],
         "gender": "female",
         "birthDate": "2000-09-30",
-        "address": [{"city": "Hyderabad", "country": "IN"}]
+        "address": [
+          {
+            "city": "Hyderabad",
+            "country": "IN"
+          }
+        ]
       },
-      "request": {"method": "PUT", "url": "Patient/shreya-kumar"}
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
     },
-
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "meera-pcos",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "E28.2", "display": "Polycystic ovarian syndrome"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E28.2",
+              "display": "Polycystic ovarian syndrome"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2021-06-01"
       },
-      "request": {"method": "PUT", "url": "Condition/meera-pcos"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "meera-hypothyroid",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "E03.9", "display": "Hypothyroidism, unspecified"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2022-01-15"
       },
-      "request": {"method": "PUT", "url": "Condition/meera-hypothyroid"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "meera-t2dm",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "E11", "display": "Type 2 diabetes mellitus"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2023-03-10"
       },
-      "request": {"method": "PUT", "url": "Condition/meera-t2dm"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "priya-pcod",
-        "subject": {"reference": "Patient/priya-menon"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "E28.2", "display": "Polycystic ovarian disease"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/priya-menon"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E28.2",
+              "display": "Polycystic ovarian disease"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2022-09-01"
       },
-      "request": {"method": "PUT", "url": "Condition/priya-pcod"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "aarav-pcos-ohss",
-        "subject": {"reference": "Patient/aarav-shah"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "E28.2", "display": "PCOS with OHSS risk"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/aarav-shah"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E28.2",
+              "display": "PCOS with OHSS risk"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2020-04-12"
       },
-      "request": {"method": "PUT", "url": "Condition/aarav-pcos-ohss"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "lakshmi-endo",
-        "subject": {"reference": "Patient/lakshmi-iyer"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "N80.0", "display": "Endometriosis of uterus"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/lakshmi-iyer"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "N80.0",
+              "display": "Endometriosis of uterus"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2018-11-20"
       },
-      "request": {"method": "PUT", "url": "Condition/lakshmi-endo"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "shreya-pcos-insulin",
-        "subject": {"reference": "Patient/shreya-kumar"},
-        "code": {"coding": [{"system": "http://hl7.org/fhir/sid/icd-10", "code": "E28.2", "display": "PCOS with insulin resistance"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "subject": {
+          "reference": "Patient/shreya-kumar"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E28.2",
+              "display": "PCOS with insulin resistance"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "onsetDateTime": "2023-01-08"
       },
-      "request": {"method": "PUT", "url": "Condition/shreya-pcos-insulin"}
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
     },
-
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-hba1c",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "4548-4", "display": "HbA1c"}]},
-        "valueQuantity": {"value": 6.1, "unit": "%"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 6.1,
+          "unit": "%"
+        },
         "effectiveDateTime": "2025-11-15",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-hba1c"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-tsh",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "11580-8", "display": "TSH"}]},
-        "valueQuantity": {"value": 4.8, "unit": "mIU/L"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11580-8",
+              "display": "TSH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 4.8,
+          "unit": "mIU/L"
+        },
         "effectiveDateTime": "2026-01-10",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-tsh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-testosterone",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "2986-8", "display": "Testosterone"}]},
-        "valueQuantity": {"value": 72, "unit": "ng/dL"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2986-8",
+              "display": "Testosterone"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 72,
+          "unit": "ng/dL"
+        },
         "effectiveDateTime": "2025-10-05",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-testosterone"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-lh",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "10501-5", "display": "LH"}]},
-        "valueQuantity": {"value": 12.3, "unit": "IU/L"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10501-5",
+              "display": "LH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 12.3,
+          "unit": "IU/L"
+        },
         "effectiveDateTime": "2026-01-20",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-lh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-fsh",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "15067-2", "display": "FSH"}]},
-        "valueQuantity": {"value": 5.1, "unit": "IU/L"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "15067-2",
+              "display": "FSH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 5.1,
+          "unit": "IU/L"
+        },
         "effectiveDateTime": "2026-01-20",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-fsh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-vitd",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "14635-7", "display": "Vitamin D"}]},
-        "valueQuantity": {"value": 18, "unit": "ng/mL"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14635-7",
+              "display": "Vitamin D"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 18,
+          "unit": "ng/mL"
+        },
         "effectiveDateTime": "2025-09-20",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-vitd"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-amh",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "76010-5", "display": "AMH"}]},
-        "valueQuantity": {"value": 8.4, "unit": "ng/mL"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76010-5",
+              "display": "AMH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 8.4,
+          "unit": "ng/mL"
+        },
         "effectiveDateTime": "2025-08-10",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-amh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-bmi",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "39156-5", "display": "BMI"}]},
-        "valueQuantity": {"value": 27.4, "unit": "kg/m2"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "BMI"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 27.4,
+          "unit": "kg/m2"
+        },
         "effectiveDateTime": "2026-05-12",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-bmi"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "meera-lipids",
-        "subject": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "57698-3", "display": "Lipid panel"}]},
-        "valueQuantity": {"value": 128, "unit": "mg/dL"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57698-3",
+              "display": "Lipid panel"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 128,
+          "unit": "mg/dL"
+        },
         "effectiveDateTime": "2025-12-01",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/meera-lipids"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
-
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "priya-amh",
-        "subject": {"reference": "Patient/priya-menon"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "76010-5", "display": "AMH"}]},
-        "valueQuantity": {"value": 9.1, "unit": "ng/mL"},
+        "subject": {
+          "reference": "Patient/priya-menon"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76010-5",
+              "display": "AMH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 9.1,
+          "unit": "ng/mL"
+        },
         "effectiveDateTime": "2025-09-15",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/priya-amh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "priya-lh",
-        "subject": {"reference": "Patient/priya-menon"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "10501-5", "display": "LH"}]},
-        "valueQuantity": {"value": 14.2, "unit": "IU/L"},
+        "subject": {
+          "reference": "Patient/priya-menon"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10501-5",
+              "display": "LH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 14.2,
+          "unit": "IU/L"
+        },
         "effectiveDateTime": "2026-02-10",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/priya-lh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "priya-testosterone",
-        "subject": {"reference": "Patient/priya-menon"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "2986-8", "display": "Testosterone"}]},
-        "valueQuantity": {"value": 68, "unit": "ng/dL"},
+        "subject": {
+          "reference": "Patient/priya-menon"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2986-8",
+              "display": "Testosterone"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 68,
+          "unit": "ng/dL"
+        },
         "effectiveDateTime": "2026-02-10",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/priya-testosterone"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
-
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "aarav-amh",
-        "subject": {"reference": "Patient/aarav-shah"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "76010-5", "display": "AMH"}]},
-        "valueQuantity": {"value": 11.2, "unit": "ng/mL"},
+        "subject": {
+          "reference": "Patient/aarav-shah"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76010-5",
+              "display": "AMH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 11.2,
+          "unit": "ng/mL"
+        },
         "effectiveDateTime": "2026-03-01",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/aarav-amh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "aarav-lh",
-        "subject": {"reference": "Patient/aarav-shah"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "10501-5", "display": "LH"}]},
-        "valueQuantity": {"value": 18.5, "unit": "IU/L"},
+        "subject": {
+          "reference": "Patient/aarav-shah"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10501-5",
+              "display": "LH"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 18.5,
+          "unit": "IU/L"
+        },
         "effectiveDateTime": "2026-03-01",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/aarav-lh"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
-
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "lakshmi-hba1c",
-        "subject": {"reference": "Patient/lakshmi-iyer"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "4548-4", "display": "HbA1c"}]},
-        "valueQuantity": {"value": 5.9, "unit": "%"},
+        "subject": {
+          "reference": "Patient/lakshmi-iyer"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 5.9,
+          "unit": "%"
+        },
         "effectiveDateTime": "2026-01-20",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/lakshmi-hba1c"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "lakshmi-vitd",
-        "subject": {"reference": "Patient/lakshmi-iyer"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "14635-7", "display": "Vitamin D"}]},
-        "valueQuantity": {"value": 14, "unit": "ng/mL"},
+        "subject": {
+          "reference": "Patient/lakshmi-iyer"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14635-7",
+              "display": "Vitamin D"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 14,
+          "unit": "ng/mL"
+        },
         "effectiveDateTime": "2025-11-10",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/lakshmi-vitd"}
-    },
-
-    {
-      "resource": {
-        "resourceType": "Observation",
-        "id": "shreya-hba1c",
-        "subject": {"reference": "Patient/shreya-kumar"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "4548-4", "display": "HbA1c"}]},
-        "valueQuantity": {"value": 6.4, "unit": "%"},
-        "effectiveDateTime": "2026-02-28",
-        "status": "final"
-      },
-      "request": {"method": "PUT", "url": "Observation/shreya-hba1c"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "shreya-testosterone",
-        "subject": {"reference": "Patient/shreya-kumar"},
-        "code": {"coding": [{"system": "http://loinc.org", "code": "2986-8", "display": "Testosterone"}]},
-        "valueQuantity": {"value": 81, "unit": "ng/dL"},
+        "subject": {
+          "reference": "Patient/shreya-kumar"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "HbA1c"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 6.4,
+          "unit": "%"
+        },
         "effectiveDateTime": "2026-02-28",
         "status": "final"
       },
-      "request": {"method": "PUT", "url": "Observation/shreya-testosterone"}
-    },
-
-    {
-      "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "meera-metformin",
-        "subject": {"reference": "Patient/meera-nair"},
-        "status": "active",
-        "intent": "order",
-        "medicationCodeableConcept": {"text": "Metformin 500mg BD"}
-      },
-      "request": {"method": "PUT", "url": "MedicationRequest/meera-metformin"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "meera-levothyroxine",
-        "subject": {"reference": "Patient/meera-nair"},
-        "status": "active",
-        "intent": "order",
-        "medicationCodeableConcept": {"text": "Levothyroxine 50mcg OD"}
+        "resourceType": "Observation",
+        "subject": {
+          "reference": "Patient/shreya-kumar"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2986-8",
+              "display": "Testosterone"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 81,
+          "unit": "ng/dL"
+        },
+        "effectiveDateTime": "2026-02-28",
+        "status": "final"
       },
-      "request": {"method": "PUT", "url": "MedicationRequest/meera-levothyroxine"}
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "meera-ocp",
-        "subject": {"reference": "Patient/meera-nair"},
-        "status": "active",
-        "intent": "order",
-        "medicationCodeableConcept": {"text": "OCP Yasmin (ethinylestradiol/drospirenone)"}
-      },
-      "request": {"method": "PUT", "url": "MedicationRequest/meera-ocp"}
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
     },
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "priya-ocp",
-        "subject": {"reference": "Patient/priya-menon"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
         "status": "active",
         "intent": "order",
-        "medicationCodeableConcept": {"text": "OCP Yasmin (ethinylestradiol/drospirenone)"}
+        "medicationCodeableConcept": {
+          "text": "Metformin 500mg BD"
+        }
       },
-      "request": {"method": "PUT", "url": "MedicationRequest/priya-ocp"}
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
     },
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "priya-folic",
-        "subject": {"reference": "Patient/priya-menon"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
         "status": "active",
         "intent": "order",
-        "medicationCodeableConcept": {"text": "Folic acid 5mg OD"}
+        "medicationCodeableConcept": {
+          "text": "Levothyroxine 50mcg OD"
+        }
       },
-      "request": {"method": "PUT", "url": "MedicationRequest/priya-folic"}
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
     },
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "aarav-letrozole",
-        "subject": {"reference": "Patient/aarav-shah"},
+        "subject": {
+          "reference": "Patient/meera-nair"
+        },
         "status": "active",
         "intent": "order",
-        "medicationCodeableConcept": {"text": "Letrozole 2.5mg (ovulation induction)"}
+        "medicationCodeableConcept": {
+          "text": "OCP Yasmin (ethinylestradiol/drospirenone)"
+        }
       },
-      "request": {"method": "PUT", "url": "MedicationRequest/aarav-letrozole"}
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
     },
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "aarav-progesterone",
-        "subject": {"reference": "Patient/aarav-shah"},
+        "subject": {
+          "reference": "Patient/priya-menon"
+        },
         "status": "active",
         "intent": "order",
-        "medicationCodeableConcept": {"text": "Micronised Progesterone 200mg vaginal"}
+        "medicationCodeableConcept": {
+          "text": "OCP Yasmin (ethinylestradiol/drospirenone)"
+        }
       },
-      "request": {"method": "PUT", "url": "MedicationRequest/aarav-progesterone"}
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
     },
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "shreya-metformin",
-        "subject": {"reference": "Patient/shreya-kumar"},
+        "subject": {
+          "reference": "Patient/priya-menon"
+        },
         "status": "active",
         "intent": "order",
-        "medicationCodeableConcept": {"text": "Metformin 1000mg BD"}
+        "medicationCodeableConcept": {
+          "text": "Folic acid 5mg OD"
+        }
       },
-      "request": {"method": "PUT", "url": "MedicationRequest/shreya-metformin"}
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
     },
-
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "subject": {
+          "reference": "Patient/aarav-shah"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Letrozole 2.5mg (ovulation induction)"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "subject": {
+          "reference": "Patient/aarav-shah"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Micronised Progesterone 200mg vaginal"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "subject": {
+          "reference": "Patient/shreya-kumar"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "text": "Metformin 1000mg BD"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
     {
       "resource": {
         "resourceType": "AllergyIntolerance",
-        "id": "meera-penicillin",
-        "patient": {"reference": "Patient/meera-nair"},
-        "code": {"coding": [{"system": "http://snomed.info/sct", "code": "372687004", "display": "Penicillin"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "patient": {
+          "reference": "Patient/meera-nair"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372687004",
+              "display": "Penicillin"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "type": "allergy",
         "criticality": "high"
       },
-      "request": {"method": "PUT", "url": "AllergyIntolerance/meera-penicillin"}
+      "request": {
+        "method": "POST",
+        "url": "AllergyIntolerance"
+      }
     },
     {
       "resource": {
         "resourceType": "AllergyIntolerance",
-        "id": "lakshmi-nsaid",
-        "patient": {"reference": "Patient/lakshmi-iyer"},
-        "code": {"coding": [{"system": "http://snomed.info/sct", "code": "372726002", "display": "NSAIDs"}]},
-        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "patient": {
+          "reference": "Patient/lakshmi-iyer"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "372726002",
+              "display": "NSAIDs"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
         "type": "allergy",
         "criticality": "high"
       },
-      "request": {"method": "PUT", "url": "AllergyIntolerance/lakshmi-nsaid"}
+      "request": {
+        "method": "POST",
+        "url": "AllergyIntolerance"
+      }
     }
-
   ]
 }
