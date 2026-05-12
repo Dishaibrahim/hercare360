@@ -1,0 +1,37 @@
+{
+  "demo_patients": {
+    "meera": {
+      "id": "pcos-001",
+      "name": "Meera Nair",
+      "age": 28,
+      "conditions": ["PCOS (E28.2)", "Hypothyroidism (E03.9)", "Borderline T2DM (E11)"],
+      "medications": ["Metformin 500mg BD", "Levothyroxine 50mcg OD", "OCP (Yasmin)"],
+      "allergies": ["Penicillin"],
+      "notes": "Primary demo patient — PCOS + hypothyroidism + insulin resistance. HbA1c overdue 102d."
+    },
+    "aarav": {
+      "id": "pcos-002",
+      "name": "Aarav Shah",
+      "age": 32,
+      "conditions": ["PCOS (E28.2)", "OHSS risk"],
+      "medications": ["Letrozole 2.5mg", "Progesterone 200mg"],
+      "allergies": [],
+      "notes": "Conflict resolution demo patient — active OHSS risk, fertility pathway, follicular scan overdue."
+    },
+    "priya": {
+      "id": "pcos-003",
+      "name": "Priya Menon",
+      "age": 25,
+      "conditions": ["PCOD"],
+      "medications": ["OCP (Yasmin)", "Folic acid 5mg"],
+      "allergies": [],
+      "notes": "Third demo patient — PCOD, fertility pathway, AMH not checked in 8 months."
+    }
+  },
+  "fhir_ids": {
+    "note": "Run seed_fhir.py to populate HAPI FHIR sandbox and update these IDs",
+    "meera_fhir_id": null,
+    "aarav_fhir_id": null,
+    "priya_fhir_id": null
+  }
+}

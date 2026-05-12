@@ -1,0 +1,74 @@
+{
+  "staff": [
+    {
+      "id": "DR001",
+      "name": "Dr Priya Sharma",
+      "role": "Gynaecologist",
+      "shift": "Morning",
+      "punch_in": "08:00",
+      "punch_out": null,
+      "status": "On Duty",
+      "hours_today": 6.5,
+      "ot_hours_week": 3.5,
+      "breaks_taken": 1,
+      "breaks_required": 2,
+      "last_break": "10:30"
+    },
+    {
+      "id": "DR002",
+      "name": "Dr Arjun Nair",
+      "role": "Endocrinologist",
+      "shift": "Morning",
+      "punch_in": "09:00",
+      "punch_out": null,
+      "status": "On Duty",
+      "hours_today": 5.5,
+      "ot_hours_week": 1.0,
+      "breaks_taken": 2,
+      "breaks_required": 2,
+      "last_break": "13:00"
+    },
+    {
+      "id": "NR001",
+      "name": "Nurse Kavya",
+      "role": "Nurse",
+      "shift": "Morning",
+      "punch_in": "07:30",
+      "punch_out": null,
+      "status": "On Duty",
+      "hours_today": 7.0,
+      "ot_hours_week": 5.5,
+      "breaks_taken": 1,
+      "breaks_required": 3,
+      "last_break": "09:00"
+    },
+    {
+      "id": "DR003",
+      "name": "Dr Meena Krishnan",
+      "role": "Radiologist",
+      "shift": "Afternoon",
+      "punch_in": "13:00",
+      "punch_out": null,
+      "status": "On Duty",
+      "hours_today": 2.5,
+      "ot_hours_week": 0.0,
+      "breaks_taken": 0,
+      "breaks_required": 1,
+      "last_break": null
+    },
+    {
+      "id": "NR002",
+      "name": "Nurse Deepa",
+      "role": "Nurse",
+      "shift": "Morning",
+      "punch_in": "07:30",
+      "punch_out": "14:00",
+      "status": "Off Duty",
+      "hours_today": 6.5,
+      "ot_hours_week": 0.0,
+      "breaks_taken": 2,
+      "breaks_required": 2,
+      "last_break": "12:30"
+    }
+  ]
+}

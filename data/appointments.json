@@ -1,0 +1,18 @@
+{
+  "appointments": [
+    {"date": "2026-05-12", "time": "09:00", "patient_id": "pcos-001", "patient_name": "Meera Nair", "type": "Follow-up", "doctor_id": "DR001"},
+    {"date": "2026-05-12", "time": "09:30", "patient_id": "pcos-002", "patient_name": "Aarav Shah", "type": "New consultation", "doctor_id": "DR001"},
+    {"date": "2026-05-12", "time": "10:00", "patient_id": "pcos-003", "patient_name": "Priya Menon", "type": "Follow-up", "doctor_id": "DR002"},
+    {"date": "2026-05-12", "time": "10:30", "patient_id": "pcos-004", "patient_name": "Riya Patel", "type": "Follow-up", "doctor_id": "DR001"},
+    {"date": "2026-05-12", "time": "11:00", "patient_id": "pcos-005", "patient_name": "Shreya Kumar", "type": "New consultation", "doctor_id": "DR002"},
+    {"date": "2026-05-12", "time": "14:00", "patient_id": "pcos-006", "patient_name": "Lakshmi Iyer", "type": "Follow-up", "doctor_id": "DR001"},
+    {"date": "2026-05-12", "time": "14:30", "patient_id": "pcos-007", "patient_name": "Ananya Reddy", "type": "Follow-up", "doctor_id": "DR002"}
+  ],
+  "weekly_history": {
+    "Mon": 12, "Tue": 18, "Wed": 22, "Thu": 15, "Fri": 19, "Sat": 8, "Sun": 3
+  },
+  "hourly_pattern": {
+    "08": 3, "09": 8, "10": 12, "11": 10, "12": 4,
+    "13": 6, "14": 11, "15": 9, "16": 5, "17": 2
+  }
+}

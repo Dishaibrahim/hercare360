@@ -1,0 +1,15 @@
+[project]
+name = "hercare360"
+version = "2.0.0"
+description = "HerCare 360 — Federated Clinical Intelligence Mesh for Women's Health"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp[apps]>=3.2.4",
+    "fhir.resources>=8.2.0",
+    "google-genai>=2.0.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.13.3",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

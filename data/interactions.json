@@ -1,0 +1,88 @@
+{
+  "interactions": [
+    {
+      "drug_a": "Metformin",
+      "drug_b": "Iodinated contrast",
+      "severity": "CRITICAL",
+      "message": "Withhold Metformin 48h before and after iodinated contrast — lactic acidosis risk",
+      "action": "Hold medication; reschedule contrast with 48h gap"
+    },
+    {
+      "drug_a": "Spironolactone",
+      "drug_b": "ACE inhibitor",
+      "severity": "HIGH",
+      "message": "Hyperkalaemia risk — Spironolactone + ACE inhibitor combination",
+      "action": "Monitor K+ closely; consider dose adjustment"
+    },
+    {
+      "drug_a": "Spironolactone",
+      "drug_b": "Pregnancy",
+      "severity": "CRITICAL",
+      "message": "Spironolactone is teratogenic — contraindicated in pregnancy or fertility pathway",
+      "action": "Discontinue immediately; switch to alternative anti-androgen"
+    },
+    {
+      "drug_a": "OCP",
+      "drug_b": "Rifampicin",
+      "severity": "HIGH",
+      "message": "Enzyme induction reduces OCP efficacy — pregnancy risk",
+      "action": "Add barrier contraception; consider higher-dose OCP"
+    },
+    {
+      "drug_a": "OCP",
+      "drug_b": "Anticonvulsant",
+      "severity": "HIGH",
+      "message": "Anticonvulsant enzyme induction reduces OCP efficacy",
+      "action": "Recommend barrier backup; review OCP dose"
+    },
+    {
+      "drug_a": "Clomiphene",
+      "drug_b": "Anticoagulant",
+      "severity": "MEDIUM",
+      "message": "OHSS worsens bleeding risk with anticoagulant co-prescription",
+      "action": "Monitor closely; adjust anticoagulant dose if OHSS develops"
+    },
+    {
+      "drug_a": "Letrozole",
+      "drug_b": "Tamoxifen",
+      "severity": "MEDIUM",
+      "message": "Competitive oestrogen receptor binding — concurrent use generally avoided",
+      "action": "Review necessity; avoid concurrent use where possible"
+    },
+    {
+      "drug_a": "Metformin",
+      "drug_b": "Alcohol",
+      "severity": "MEDIUM",
+      "message": "Heavy alcohol + Metformin — lactic acidosis risk",
+      "action": "Counsel patient on alcohol limits; document in record"
+    },
+    {
+      "drug_a": "Inositol",
+      "drug_b": "Metformin",
+      "severity": "LOW",
+      "message": "Additive insulin-sensitising effect — monitor for hypoglycaemia",
+      "action": "Monitor blood glucose; may allow Metformin dose reduction"
+    },
+    {
+      "drug_a": "OCP",
+      "drug_b": "Vitamin D",
+      "severity": "INFO",
+      "message": "OCP may reduce Vit D absorption",
+      "action": "Note in diet plan; recommend Vit D supplementation"
+    },
+    {
+      "drug_a": "Levothyroxine",
+      "drug_b": "Calcium",
+      "severity": "MEDIUM",
+      "message": "Calcium supplements reduce Levothyroxine absorption",
+      "action": "Take Levothyroxine 4h apart from calcium supplements"
+    },
+    {
+      "drug_a": "Levothyroxine",
+      "drug_b": "Iron",
+      "severity": "MEDIUM",
+      "message": "Iron supplements reduce Levothyroxine absorption",
+      "action": "Take Levothyroxine at least 2h apart from iron supplements"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "rooms": [
+    {
+      "id": "US-1",
+      "name": "Ultrasound-1",
+      "type": "Ultrasound",
+      "slot_duration_min": 30,
+      "bookings": [
+        {"time": "09:00", "patient_id": "pcos-001", "patient_name": "Meera Nair", "procedure": "Follicular scan"},
+        {"time": "10:00", "patient_id": "pcos-002", "patient_name": "Aarav Shah", "procedure": "Pelvic ultrasound"},
+        {"time": "14:00", "patient_id": "pcos-003", "patient_name": "Priya Menon", "procedure": "Follicular scan"}
+      ]
+    },
+    {
+      "id": "US-2",
+      "name": "Ultrasound-2",
+      "type": "Ultrasound",
+      "slot_duration_min": 30,
+      "bookings": [
+        {"time": "09:30", "patient_id": "pcos-004", "patient_name": "Riya Patel", "procedure": "Follicular scan"},
+        {"time": "11:00", "patient_id": "pcos-005", "patient_name": "Shreya Kumar", "procedure": "Pelvic ultrasound"}
+      ]
+    },
+    {
+      "id": "DEXA-1",
+      "name": "DEXA Scanner",
+      "type": "DEXA",
+      "slot_duration_min": 45,
+      "bookings": [
+        {"time": "10:00", "patient_id": "pcos-006", "patient_name": "Lakshmi Iyer", "procedure": "Bone density scan"}
+      ]
+    },
+    {
+      "id": "COLPO-1",
+      "name": "Colposcopy Suite",
+      "type": "Colposcopy",
+      "slot_duration_min": 60,
+      "bookings": []
+    }
+  ]
+}
