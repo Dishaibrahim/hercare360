@@ -5,7 +5,8 @@ import os
 from typing import Any
 
 CLINICAL_URL = os.getenv("CLINICAL_SERVICE_URL", "http://127.0.0.1:9002/mcp")
-WELLNESS_URL = os.getenv("WELLNESS_SERVICE_URL", "http://127.0.0.1:9003/mcp")
+WELLNESS_URL  = os.getenv("WELLNESS_SERVICE_URL",  "http://127.0.0.1:9003/mcp")
+OPS_URL       = os.getenv("OPS_SERVICE_URL",        "http://127.0.0.1:9001/mcp")
 
 
 async def a2a_call(agent_url: str, tool_name: str, arguments: dict[str, Any] | None = None) -> Any:

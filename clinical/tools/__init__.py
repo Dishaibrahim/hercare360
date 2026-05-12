@@ -3,6 +3,7 @@ from clinical.tools.pre_visit_summary import pre_visit_summary_app
 from clinical.tools.med_reconciliation import med_reconciliation_app
 from clinical.tools.urgency_tools import urgency_tools_app
 from clinical.tools.total_woman_care import total_woman_care_app
+from clinical.tools.consultation_readiness import consultation_readiness_app
 
 
 def register_tools(mcp: FastMCP) -> None:
@@ -10,3 +11,4 @@ def register_tools(mcp: FastMCP) -> None:
     mcp.add_provider(med_reconciliation_app)
     mcp.add_provider(urgency_tools_app)
     mcp.add_provider(total_woman_care_app)
+    mcp.add_provider(consultation_readiness_app)
